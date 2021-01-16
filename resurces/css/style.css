@@ -40,7 +40,7 @@ a {
 /*========================================================*/
 .nav-bg {
     width: 100%;
-    height: 6.9rem;
+    height: 6.4rem;
 }
 .nav-container {
     margin: 0 2.4rem;
@@ -48,6 +48,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.nav--phone {
+    display: none;
+    position: absolute;
 }
 .logo {
     height: 3.2rem;
@@ -72,6 +76,21 @@ a {
     font-family: var(--fuentePrincipal);
     font-weight: 400;
 }
+@media (max-width: 480px) {
+    .nav-container {
+        display: none;
+    }
+    .nav--phone {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-bg {
+        display: flex;
+        align-items: center;
+        height: 6.4rem;
+    }
+}
 
 /*Banner*/
 /*===========================================================*/
@@ -93,7 +112,7 @@ a {
     margin: auto 0 auto 4rem;
 }
 .banner__info__title {
-    font-size: 3rem;
+    font-size: 3.4rem;
     margin-bottom: 2rem;
     font-weight: 700;
     word-spacing: .3rem;
@@ -116,9 +135,36 @@ a {
     background-color: var(--blanco);
     color: var(--negro);
 }
+@media (max-width: 480px) {
+    .banner-container {
+        display: block;
+        height: 64rem;
+    }
+    .banner__container-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner__info {
+        margin-left: 1.6rem;
+        margin-top: 3.2rem;
+    }
+    .banner__info__title {
+        margin-bottom: 3.2rem;
+    }
+    .banner__info__text {
+        margin-bottom: 3.2rem;
+    }
+    .banner__info__btn {
+        padding: .8rem 30%;
+        margin: 0 auto;
+    }
+}
 
 /*Practicing*/
 /*============================================================*/
+.aside-phone {
+    display: none;
+}
 .prac-container {
     display: grid;
     grid-template-columns: 64% 36%;
@@ -150,6 +196,48 @@ a {
     font-size: 1.2rem;
     margin-top: 3rem;
     font-weight: 300;
+}
+@media (max-width: 480px) {
+    .card-prac {
+        display: none;
+    }
+    .prac-aside {
+        display: none;
+    }
+    .aside-phone {
+        display: inline;
+        width: 156%;
+    }
+    .aside-phone__card {
+        margin: 0 auto 6.4rem auto;
+    }
+    .aside-phone__card__container-img {
+        width: 94%;
+        margin: 1.6rem auto;
+        overflow: hidden;
+    }
+    .aside-phone__card__img {
+        max-width: 100%;
+        height: auto;
+    }
+    .aside-phone__card__info {
+        margin-left: 3.2rem;
+    }
+    .aside-phone__card__info__title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .aside-phone__card__info__text {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+    .aside-phone__card__info__btn {
+        margin-bottom: 6.4rem;
+        font-size: 1.3rem;
+
+    }
 }
 
 /*Practicing aside*/
@@ -204,7 +292,7 @@ a {
 .learn-title {
     margin-bottom: 3.2rem;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     font-weight: 700;
 }
 .learn-grid {
@@ -242,4 +330,41 @@ a {
 .courses {
     margin: .8rem 0;
     font-size: 1.4rem;
+}
+
+/*Thesis*/
+/*====================================================================*/
+.thesis-title {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin: 6.2rem 0 3.2rem 0;
+}
+.thesis-grid {
+    display: grid;
+    grid-template-columns: 64% 36%;
+}
+.prac-aside--thesis {
+    border: none;
+}
+
+/*Footer*/
+/*=======================================================================*/
+.footer-bg {
+    border-top: 1px solid var(--colorPrincipal);
+    height: 6.9rem;
+    display: flex;
+    align-items: center;
+}
+.footer-container {
+    width: 100%;
+    margin: 0 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-footer {
+    height: 100%;
+    display: flex;
+    gap: 2rem;
 }
