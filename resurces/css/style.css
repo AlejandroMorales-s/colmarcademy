@@ -207,6 +207,7 @@ a {
     .aside-phone {
         display: inline;
         width: 156%;
+        border-bottom: 1px solid var(--colorPrincipal);
     }
     .aside-phone__card {
         margin: 0 auto 6.4rem auto;
@@ -226,17 +227,18 @@ a {
     .aside-phone__card__info__title {
         font-size: 2rem;
         font-weight: 700;
+        display: inline-block;
     }
     .aside-phone__card__info__text {
         font-size: 1.4rem;
         margin: 1rem 0;
         line-height: 2rem;
         font-weight: 400;
+        display: block;
     }
     .aside-phone__card__info__btn {
         margin-bottom: 6.4rem;
         font-size: 1.3rem;
-
     }
 }
 
@@ -331,6 +333,31 @@ a {
     margin: .8rem 0;
     font-size: 1.4rem;
 }
+@media (max-width: 480px) {
+    .container-learning {
+        background-color: var(--blanco);
+    }
+    .learn-grid {
+        display: none;
+    }
+    .cards-learn-phone {
+        border-bottom: 1px solid var(--colorPrincipal);
+    }
+    .card-learn-phone {
+        background-color: var(--colorPrincipal);
+        margin: .8rem 1.6rem;
+        border-radius: .5rem;
+    }
+    .card-learn-phone:last-of-type {
+        margin-bottom: 4.2rem;
+    }
+    .card-learn-phone__title {
+        text-align: left;
+        padding: 2.4rem 0 2.4rem 1.6rem;
+        font-size: 1.8rem;
+        color: var(--negro);
+    }
+}
 
 /*Thesis*/
 /*====================================================================*/
@@ -346,6 +373,23 @@ a {
 }
 .prac-aside--thesis {
     border: none;
+}
+@media (max-width: 480px) {
+    .thesis-title {
+        margin: 0 0 1.6rem 0;
+    }
+    .video-phone {
+
+    }
+    .video-phone-container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .video-phone__video {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 2.4rem;
+    }
 }
 
 /*Footer*/
