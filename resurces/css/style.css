@@ -17,6 +17,16 @@ html {
     box-sizing: inherit;
 }
 
+/*Globales*/
+/*=========================================================*/
+h1,
+h2, 
+h3, 
+p,
+a {
+    font-family: var(--fuentePrincipal);
+}
+
 /*Utilidades*/
 /*========================================================*/
 .no-margin{
@@ -53,7 +63,7 @@ html {
 .nav {
     height: 100%;
     display: flex;
-    gap: 1.8rem;
+    gap: 3rem;
     align-items: center;
 }
 .nav__btn {
@@ -63,109 +73,112 @@ html {
     font-weight: 400;
 }
 
-/*Hero*/
+/*Banner*/
 /*===========================================================*/
-.hero {
+.banner-container {
+    display: flex;
     background-color: var(--colorPrincipal);
-    width: 100%;
-    height: 72rem;
-    display: flex;
 }
-.hero__img__container {
+.banner__container-img {
+    margin: 3.2rem 2.4rem;
     width: 60%;
-    margin: 3.2rem 2.4rem;
-    background-image: url(..//images/banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    overflow: hidden;
 }
-.hero__img {
-    margin: 3.2rem 2.4rem;
-    width: 100%;
+.banner__img {
+    max-width: 100%;
+    height: auto;
 }
-.hero__info__container {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center; 
+.banner__info {
+    margin: auto 0 auto 4rem;
 }
-.hero__info {
-    margin-left: 2rem;
-}
-.hero__info__title {
-    font-size: 4rem;
-    font-weight: 700;
+.banner__info__title {
+    font-size: 3rem;
     margin-bottom: 2rem;
-    color: #393939;
-    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    word-spacing: .3rem;
 }
-.hero__info__text {
-    font-size: 2rem;
-    margin-bottom: 4.5rem;
-    color: #393939;
-    font-family: var(--fuentePrincipal);
-    font-weight: 400;
-}
-.hero__info__btn {
+.banner__info__text {
     font-size: 1.8rem;
-    padding: .8rem 10.5rem;
-    background-color: #393939;
-    color: #ffffff;
-    font-family: var(--fuentePrincipal);
-    font-weight: 400;
+    margin-bottom: 5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+.banner__info__btn {
+    font-size: 1.6rem;
+    padding: .8rem 20%;
+    background-color: var(--negro);
+    color: var(--blanco);
     border-radius: .5rem;
 }
 
 /*Practicing*/
+/*============================================================*/
 .prac-container {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 64% 36%;
+}
+.card-prac {
+    margin: 3.2rem 2.4rem;
+}
+.prac__container-img {
+    width: 98.5%;
+    overflow: hidden;
+}
+.prac__img {
+    max-width: 100%;
     height: auto;
-    display: flex;
+    margin-bottom: 3.2rem;
 }
-.prac-left {
-    width: 61.3%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: 2px solid #ecf0f1;
+.prac__info-title {
+    font-size: 2.4rem;
+    font-weight: 700;
 }
-.prac-left__img {
-    margin: 3.2rem 0;
-    background-image: url(../images/information-main.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 95%;
-    height: 50rem;
-}
-.prac-left__info-container {
-    width: 95%;
-}
-.prac-left__title {
-    font-family: var(--fuentePrincipal);
-    font-size: 3rem;
-    color: #343434;
-}
-.prac-left__info {
-    font-family: var(--fuentePrincipal);
+.prac__info-text {
     font-size: 1.4rem;
     margin: 2.4rem 0;
     line-height: 2rem;
+    font-weight: 400;
 }
-.prac-left__autor {
-    margin-bottom: 3.2rem;
-    font-family: var(--fuentePrincipal);
+.prac__info-author {
     font-size: 1.2rem;
+    margin-top: 3rem;
+    font-weight: 300;
 }
-.prac-right {
-    width: 30%;
 
-}
-.prac-right-grid {
+/*Practicing aside*/
+/*======================================================================*/
+.prac-aside {
+    margin: 3.4rem 0;
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    border-left: 2px solid var(--colorPrincipal);
+}
+.aside__widget {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--colorPrincipal);
+    list-style: none;
+}
+.aside__widget:last-of-type {
+    border-bottom: none;
+}
+.aside__widget__container-img {
+    width: 35%;
+    overflow: hidden;
+    margin: 1.6rem 1.6rem;
+}
+.aside__widget__img {
+    width: 100%;
+    height: auto;
+}
+.aside__widget__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.aside__widget__text {
+    font-size: 1.3rem;
+    margin: .8rem 0;
+    line-height: 2rem;
+}
+.aside__widget__btn {
+    font-size: 1.3rem;
 }

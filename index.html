@@ -6,7 +6,7 @@
     <title>Document</title>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <!--Normalize-->
     <link rel="preload" href="resurces/css/normalize.css" as="style">
     <link rel="stylesheet" href="resurces/css/normalize.css">
@@ -31,35 +31,64 @@
                 </nav>
             </div>
         </div>
-        <!--Hero-->
-        <div class="hero">
-            <div class="hero__img__container"></div>
-            <div class="hero__info__container">
-                <div class="hero__info">
-                    <h2 class="hero__info__title">Learn something <br> new everyday</h2>
-                    <p class="hero__info__text">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
-                    <a class="hero__info__btn decoration" href="#">Start here</a>
-                </div>
+        <!--Banner-->
+        <div class="banner-container">
+            <div class="banner__container-img">
+                <img class="banner__img" src="resurces/images/banner.jpg" alt="">
             </div>
-        </div>
+            <div class="banner__info">
+                <h2 class="banner__info__title">Learn something <br> new everyday</h2>
+                <p class="banner__info__text">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+                <a class="banner__info__btn decoration" href="#">Start here</a>
+            </div>
     </header>
     <main>
         <!--Practicing-->
         <div class="prac-container">
-            <div class="prac-left">
-                <div class="prac-left__img"></div>
-                <div class="prac-left__info-container">
-                    <h2 class="prac-left__title">It doesn'n hurt to keep practicing</h2>
-                    <p class="prac-left__info">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem dolore dolor minus explicabo fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum autem quasi voluptas enim aperiam quis magnam id reprehenderit debitis culpa eligendi nesciunt saepe, necessitatibus repudiandae beatae iusto eaque magni corrupti."</p>
-                    <p class="prac-left__autor">Emanuel, Sr Strategist at Hiring.com</p>
+            <div class="card-prac">
+                <div class="prac__container-img">
+                    <img class="prac__img" src="resurces/images/information-main.jpg" alt="">
+                </div>
+                <div class="prac__container-info">
+                    <h2 class="prac__info-title">It doesn'n hurt to keep practicing</h2>
+                    <p class="prac__info-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ea maiores rerum officiis sunt ullam voluptates harum in qui quasi voluptatum iure ipsum quaerat enim beatae repudiandae, aliquam vero blanditiis ut dolore! Aut, beatae? Eligendi!"</p>
+                    <p class="prac__info-author">Emanuel, Sr Strategist at Hiring.com</p>
                 </div>
             </div>
-            <div class="prac-right">
-                <div class="prac-right-grid">
-
+            <!--Practicing aside-->
+            <div class="prac-aside">
+                <div class="aside__widget">
+                    <div class="aside__widget__container-img">
+                        <img class="aside__widget__img" src="resurces/images/information-orientation.jpg" alt="">
+                    </div>
+                    <li>
+                        <h3 class="aside__widget__title">Orientation date</h3>
+                        <p class="aside__widget__text">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a class="aside__widget__btn decoration" href="#">Read more</a>
+                    </li>
+                </div>
+                <div class="aside__widget">
+                    <div class="aside__widget__container-img">
+                        <img class="aside__widget__img" src="resurces/images/information-campus.jpg" alt="">
+                    </div>
+                    <li>
+                        <h3 class="aside__widget__title">Our campus</h3>
+                        <p class="aside__widget__text">Find which campus is close by you</p>
+                        <a class="aside__widget__btn decoration" href="#">Read more</a>
+                    </li>
+                </div>
+                <div class="aside__widget">
+                    <div class="aside__widget__container-img">
+                        <img class="aside__widget__img" src="resurces/images/information-guest-lecture.jpg" alt="">
+                    </div>
+                    <li>
+                        <h3 class="aside__widget__title">Our guest lecture</h3>
+                        <p class="aside__widget__text">Join a keynote with Oliver Sack <br> about music in medical treatment</p>
+                        <a class="aside__widget__btn decoration" href="#">Read more</a>
+                    </li>
                 </div>
             </div>
         </div>
-    </main>
+    </main>    
 </body>
-</html>
+</html>    
