@@ -41,6 +41,7 @@ a {
 .nav-bg {
     width: 100%;
     height: 6.4rem;
+    background-color: var(--colorPrincipal);
 }
 .nav-container {
     margin: 0 2.4rem;
@@ -48,6 +49,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--colorPrincipal);
 }
 .nav--phone {
     display: none;
@@ -96,7 +98,7 @@ a {
 /*===========================================================*/
 .banner-container {
     display: flex;
-    background-color: var(--colorPrincipal);
+    background-color: #3D42BF;
 }
 .banner__container-img {
     margin: 3.2rem 2.4rem;
@@ -112,28 +114,31 @@ a {
     margin: auto 0 auto 4rem;
 }
 .banner__info__title {
-    font-size: 3.4rem;
+    font-size: 4.5rem;
     margin-bottom: 2rem;
     font-weight: 700;
     word-spacing: .3rem;
+    color: var(--blanco);
 }
 .banner__info__text {
     font-size: 1.8rem;
     margin-bottom: 5rem;
     line-height: 2.5rem;
     font-weight: 500;
+    color: #dcdde1;
 }
 .banner__info__btn {
     font-size: 1.6rem;
     padding: .8rem 20%;
-    background-color: var(--negro);
+    background-color: #62B342;
     color: var(--blanco);
     border-radius: .5rem;
     transition: all 90ms ease-in;
 }
 .banner__info__btn:hover {
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: #5EAB3F;
+    color: var(--blanco);
+    padding: 1rem 22%;
 }
 @media (max-width: 480px) {
     .banner-container {
@@ -168,6 +173,7 @@ a {
 .prac-container {
     display: grid;
     grid-template-columns: 64% 36%;
+    background-color: var(--colorPrincipal);
 }
 .card-prac {
     margin: 3.2rem 2.4rem;
@@ -225,12 +231,12 @@ a {
         margin-left: 3.2rem;
     }
     .aside-phone__card__info__title {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 700;
         display: inline-block;
     }
     .aside-phone__card__info__text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin: 1rem 0;
         line-height: 2rem;
         font-weight: 400;
@@ -238,7 +244,12 @@ a {
     }
     .aside-phone__card__info__btn {
         margin-bottom: 6.4rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        color: #5EAB3F;
+        transition: all 100ms ease-in;
+    }
+    .aside-phone__card__info__btn:hover {
+        font-size: 1.7rem;
     }
 }
 
@@ -247,17 +258,17 @@ a {
 .prac-aside {
     margin: 3.4rem 0;
     width: 100%;
-    border-left: 2px solid var(--colorPrincipal);
+    border-left: 2px solid #d6d6d6;
 }
 .aside__widget {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid var(--colorPrincipal);
+    border-bottom: 2px solid #d6d6d6;
     list-style: none;
     transition: all 90ms ease-in;
 }
 .aside__widget:hover {
-    background-color: var(--colorPrincipal);
+    background-color: #e0e0e0;
 }
 .aside__widget:last-of-type {
     border-bottom: none;
@@ -283,19 +294,28 @@ a {
 }
 .aside__widget__btn {
     font-size: 1.3rem;
+    color: #5EAB3F;
+    transition: all 100ms ease-in;
+}
+.aside__widget__btn:hover {
+    font-size: 1.6rem;
 }
 
 /*Learning*/
 /*========================================================================*/
+.cards-learn-phone {
+    display: none;
+}
 .container-learning {
     padding: 3.4rem 0;
-    background-color: var(--colorPrincipal);
+    background-color: #B37840;
 }
 .learn-title {
     margin-bottom: 3.2rem;
     text-align: center;
     font-size: 3.4rem;
     font-weight: 700;
+    color: var(--blanco);
 }
 .learn-grid {
     margin: 0 7.2rem;
@@ -305,7 +325,7 @@ a {
     grid-template-rows: repeat(2, 1fr);
 }
 .learn__card {
-    background-color: var(--blanco);
+    background-color: var(--colorPrincipal);
     border-radius: .5rem;
     box-shadow: 0rem 0rem .6rem var(--negro);
 }
@@ -322,7 +342,7 @@ a {
     margin: 1.6rem 1.6rem 2.4rem 1.6rem;
 }
 .learn__card__info__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 .learn__card__info__text {
@@ -335,18 +355,23 @@ a {
 }
 @media (max-width: 480px) {
     .container-learning {
-        background-color: var(--blanco);
+        background-color: #B37840;
     }
     .learn-grid {
         display: none;
     }
     .cards-learn-phone {
+        display: inline;
         border-bottom: 1px solid var(--colorPrincipal);
     }
     .card-learn-phone {
         background-color: var(--colorPrincipal);
         margin: .8rem 1.6rem;
         border-radius: .5rem;
+        transition: all 100ms ease-in;
+    }
+    .card-learn-phone:hover {
+        background-color: #e0e0e0;
     }
     .card-learn-phone:last-of-type {
         margin-bottom: 4.2rem;
@@ -361,11 +386,24 @@ a {
 
 /*Thesis*/
 /*====================================================================*/
+.video-phone {
+    display: none;
+}
 .thesis-title {
     text-align: center;
     font-size: 3.4rem;
     font-weight: 700;
     margin: 6.2rem 0 3.2rem 0;
+}
+.widget-bg {
+    transition: all 100ms ease-in;
+    border-bottom: 2px solid #ecf0f1b4;
+}
+.widget-bg:hover {
+    background-color: var(--colorPrincipal);
+}
+.thesis-bg {
+    background-color: var(--blanco);
 }
 .thesis-grid {
     display: grid;
@@ -379,7 +417,7 @@ a {
         margin: 0 0 1.6rem 0;
     }
     .video-phone {
-
+        display: inline;
     }
     .video-phone-container {
         width: 100%;
@@ -399,6 +437,7 @@ a {
     height: 6.9rem;
     display: flex;
     align-items: center;
+    background-color: var(--colorPrincipal);
 }
 .footer-container {
     width: 100%;
@@ -406,6 +445,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--colorPrincipal);
 }
 .nav-footer {
     height: 100%;
