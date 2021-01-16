@@ -87,6 +87,7 @@ a {
 .banner__img {
     max-width: 100%;
     height: auto;
+    border-radius: .5rem;
 }
 .banner__info {
     margin: auto 0 auto 4rem;
@@ -109,6 +110,11 @@ a {
     background-color: var(--negro);
     color: var(--blanco);
     border-radius: .5rem;
+    transition: all 90ms ease-in;
+}
+.banner__info__btn:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
 }
 
 /*Practicing*/
@@ -128,6 +134,7 @@ a {
     max-width: 100%;
     height: auto;
     margin-bottom: 3.2rem;
+    border-radius: .5rem;
 }
 .prac__info-title {
     font-size: 2.4rem;
@@ -157,6 +164,10 @@ a {
     align-items: center;
     border-bottom: 3px solid var(--colorPrincipal);
     list-style: none;
+    transition: all 90ms ease-in;
+}
+.aside__widget:hover {
+    background-color: var(--colorPrincipal);
 }
 .aside__widget:last-of-type {
     border-bottom: none;
@@ -169,6 +180,7 @@ a {
 .aside__widget__img {
     width: 100%;
     height: auto;
+    border-radius: .5rem;
 }
 .aside__widget__title {
     font-size: 1.8rem;
@@ -181,4 +193,53 @@ a {
 }
 .aside__widget__btn {
     font-size: 1.3rem;
+}
+
+/*Learning*/
+/*========================================================================*/
+.container-learning {
+    padding: 3.4rem 0;
+    background-color: var(--colorPrincipal);
+}
+.learn-title {
+    margin-bottom: 3.2rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.learn-grid {
+    margin: 0 7.2rem;
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.learn__card {
+    background-color: var(--blanco);
+    border-radius: .5rem;
+    box-shadow: 0rem 0rem .6rem var(--negro);
+}
+.learn__card__container-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.learn__card__img {
+    width: 100%;
+    height: auto;
+}
+.learn__card__info {
+    margin: 1.6rem 1.6rem 2.4rem 1.6rem;
+}
+.learn__card__info__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.learn__card__info__text {
+    font-size: 1.3rem;
+    
+}
+.courses {
+    margin: .8rem 0;
+    font-size: 1.4rem;
 }
